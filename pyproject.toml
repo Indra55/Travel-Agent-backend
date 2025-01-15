@@ -7,14 +7,12 @@ authors = ["Hitanshu Gala"]
 [tool.poetry.dependencies]
 python = "3.12.3"
 crewai = "0.1.24"
-pyowm = "3.3.0"
 tools = "^0.1.9"
-python-dotenv = "1.0.0"
+python-dotenv = "1.0.1"
 Flask = "^3.0.3"
-flask-cors = "^3.1.1"
-pydantic = "^1.10.2"
+flask-cors = "5.0.0"
 requests = "^2.28.1"
-langchain = "0.3.13"
+langchain = ">=0.0.354,<0.0.355"
 
 [tool.pyright]
 # https://github.com/microsoft/pyright/blob/main/docs/configuration.md
