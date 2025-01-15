@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "Travel Tales"
+version = "0.1.0"
+description = "Trip planning AI"
+authors = ["Hitanshu Gala"]
+
+[tool.poetry.dependencies]
+python = "3.12.3"
+crewai = "0.1.24"
+pyowm = "3.3.0"
+tools = "^0.1.9"
+python-dotenv = "1.0.0"
+Flask = "^3.0.3"
+flask-cors = "^3.1.1"
+pydantic = "^1.10.2"
+requests = "^2.28.1"
+langchain = "^0.0.208"
+
+[tool.pyright]
+# https://github.com/microsoft/pyright/blob/main/docs/configuration.md
+useLibraryCodeForTypes = true
+exclude = [".cache"]
+
+[tool.ruff]
+# https://beta.ruff.rs/docs/configuration/
+select = ['E', 'W', 'F', 'I', 'B', 'C4', 'ARG', 'SIM']
+ignore = ['W291', 'W292', 'W293']
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
