@@ -2,7 +2,6 @@ from crewai import Agent, LLM
 from textwrap import dedent
 from tools.search_tool import SearchTools
 from tools.calc_tool import CalculatorTools
-from pydantic import SecretStr
 import os
 
 class TravelAgents:
